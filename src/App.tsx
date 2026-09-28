@@ -16,46 +16,34 @@ function App() {
       </header>
 
       <section className="hero" id="top">
-        <div className="hero-index">01<br /><span>intro</span></div>
-        <div className="hero-main">
-          <p className="overline">Hello, I’m</p>
-          <h1>RHine<span className="blue-dot">.</span></h1>
-          <p className="hero-line">Developer / collector / curious person</p>
+        <div className="hero-copy">
+          <p className="eyebrow">Hello, I’m RHine<span>.</span></p>
+          <h1>Ideas, code<br /><i>and curiosity.</i></h1>
+          <p className="hero-description">A small personal space for things I build, learn, collect, and keep.</p>
+          <p className="ru-line"><span>RU</span> Privet, ya RHine. Eto moe malenkoe mesto v internete.</p>
         </div>
-        <div className="hero-aside">
-          <p>A small, intentional corner<br />for things I make,<br />learn, and keep.</p>
-          <span className="scroll-mark">↓ scroll to explore</span>
-        </div>
-      </section>
-
-      <section className="statement section-grid">
-        <div className="section-label">02 / about</div>
-        <div className="statement-copy">
-          <p className="statement-lead">I like turning curiosity into working things.</p>
-          <p className="body-copy">Software, experiments, useful tools, strange ideas — this is where they meet. No loud portfolio theatre. Just a living index of what I’m building and what I’m paying attention to.</p>
-          <p className="ru-line"><span>RU</span> Небольшое цифровое пространство о коде, любопытстве и вещах, которые хочется сохранить.</p>
+        <div className="hero-side">
+          <span className="side-mark">01</span>
+          <span>developer<br />collector<br />curious person</span>
         </div>
       </section>
 
-      <section className="archive section-grid" id="archive">
-        <div className="section-label">03 / archive</div>
+      <section className="archive" id="archive">
+        <div className="section-head"><span>01</span><h2>The archive</h2></div>
         <div className="archive-panel">
-          <div className="archive-topline"><span className="telegram-mark">↗</span><span>Telegram channel</span><span className="archive-status">open collection</span></div>
-          <div className="archive-content">
-            <h2>RHine’s<br /><i>Archive</i></h2>
-            <div className="archive-description">
-              <p>A personal shelf of screenshots, music, films, books, tools, games, and useful little discoveries.</p>
-              <a className="archive-cta" href="https://t.me/RHineArchive" target="_blank" rel="noreferrer">Enter the archive <ArrowUpRight /></a>
-            </div>
+          <div className="archive-title"><span className="telegram-mark">↗</span><h3>RHine’s<br /><i>Archive</i></h3></div>
+          <div className="archive-info">
+            <p>A personal Telegram shelf for screenshots, music, films, books, tools, games, and small discoveries worth keeping.</p>
+            <a className="archive-cta" href="https://t.me/RHineArchive" target="_blank" rel="noreferrer">Open @RHineArchive <ArrowUpRight /></a>
           </div>
-          <div className="archive-tags"><span>art</span><span>anime</span><span>games</span><span>music</span><span>books</span><span>tools</span><span>+ more</span></div>
+          <div className="archive-tags"><span>art</span><span>anime</span><span>games</span><span>music</span><span>books</span><span>tools</span></div>
         </div>
       </section>
 
-      <section className="toolkit section-grid">
-        <div className="section-label">04 / toolkit</div>
-        <div className="toolkit-content">
-          <div className="toolkit-heading"><span>Languages I speak</span><strong>in code.</strong></div>
+      <section className="toolkit" id="toolkit">
+        <div className="section-head"><span>02</span><h2>Toolkit</h2></div>
+        <div className="toolkit-body">
+          <p className="toolkit-intro">Languages and tools I enjoy turning into useful things.</p>
           <div className="skills-grid">
             {skills.map((skill, index) => <div className="skill" key={skill}><span>0{index + 1}</span>{skill}</div>)}
           </div>
@@ -64,8 +52,7 @@ function App() {
 
       <footer className="footer">
         <div className="footer-name">RHine<span>.</span></div>
-        <div className="footer-center">made with attention / rhineix.online</div>
-        <a href="https://t.me/RHineArchive" target="_blank" rel="noreferrer" className="footer-link">@RHineArchive <ArrowUpRight /></a>
+        <div className="footer-right"><a href="https://t.me/RHineArchive" target="_blank" rel="noreferrer">@RHineArchive <ArrowUpRight /></a><span>© 2026</span></div>
       </footer>
     </main>
   );
