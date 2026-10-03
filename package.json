@@ -1,11 +1,9 @@
 {
-  "name": "rhine-personal-site",
+  "name": "riacreates",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@11.0.0",
   "scripts": {
-    "dev": "node server.mjs",
-    "start": "node server.mjs",
-    "build": "rm -rf dist && mkdir -p dist && cp index.html styles.css script.js server.mjs package.json dist/ && cp -r public/* dist/"
+    "start": "python3 -m http.server 3000 --bind 0.0.0.0",
+    "build": "rm -rf dist && mkdir -p dist && cp index.html styles.css script.js logo.svg manus-routes.json dist/ && cp -r public dist/public && touch dist/.nojekyll"
   }
 }
